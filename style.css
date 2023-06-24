@@ -1,0 +1,140 @@
+/* Configs Globais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Background */
+body {
+    background-color: #e2725b;
+}
+
+/* Card principal */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    padding: 5px;
+}
+.mainCard {
+    text-align: center;
+    border-radius: 30px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Profile */
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+.profileName {
+    margin: 10px 0;
+    font-size: 33px;
+    color: white;
+}
+
+.about {
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+/* Links */
+
+.mainCard ul li  {
+    margin: 30px 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+.mainCard ul li a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at 100% 0%, #fe6164 0, #fc5469 12.5%, #f9466d 25%, #f43672 37.5%, #ee2177 50%, #e7007d 62.5%, #de0084 75%, #d5008b 87.5%, #ca0094 100%);
+    width: 300px;
+    height: 55px;
+    color: white;
+    border-radius: 10px;
+    transition: transform 220ms ease-out;
+}
+
+.mainCard ul li a:hover{
+    transform:scale(1.1);
+    transition: 220ms;
+}
+
+.icons {
+    width: 30px;
+    margin: 0 15px 0 0;
+    
+}
+
+
+.steam {
+    width: 35px;
+}
+
+#discordAncora {
+    cursor: pointer;
+}
+
+.footerInfo {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* RESPONSIVO */
+
+
+    @media screen and (max-width: 900px) {
+        /* Card principal */
+        .mainCard {
+          width: 80%;
+        }
+        iframe {
+           padding: 0;
+        }
+      
+        /* Profile */
+        .profile {
+          width: 120px;
+          height: 120px;
+          margin-top: 30px;
+        }
+      
+        .profileName {
+          font-size: 28px;
+        }
+      
+        /* Links */
+        .mainCard ul li a {
+          width: 250px;
+          height: 50px;
+          font-size: 14px;
+        }
+      
+        .icons {
+          width: 25px;
+        }
+      
+        .steam {
+          width: 30px;
+        }
+    }
